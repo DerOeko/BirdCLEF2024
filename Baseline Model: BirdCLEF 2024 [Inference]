@@ -1,38 +1,46 @@
 {
  "cells": [
   {
-   "cell_type": "markdown",
-   "id": "815461e9",
+   "cell_type": "code",
+   "execution_count": 1,
+   "id": "c2b20336",
    "metadata": {
+    "execution": {
+     "iopub.execute_input": "2024-05-05T09:34:47.207226Z",
+     "iopub.status.busy": "2024-05-05T09:34:47.206636Z",
+     "iopub.status.idle": "2024-05-05T09:34:47.210769Z",
+     "shell.execute_reply": "2024-05-05T09:34:47.210023Z"
+    },
     "papermill": {
-     "duration": 0.004217,
-     "end_time": "2024-04-28T15:59:02.789462",
+     "duration": 0.011422,
+     "end_time": "2024-05-05T09:34:47.212593",
      "exception": false,
-     "start_time": "2024-04-28T15:59:02.785245",
+     "start_time": "2024-05-05T09:34:47.201171",
      "status": "completed"
     },
     "tags": []
    },
+   "outputs": [],
    "source": [
     "# Package imports"
    ]
   },
   {
    "cell_type": "code",
-   "execution_count": 1,
-   "id": "0c9747f0",
+   "execution_count": 2,
+   "id": "27de9792",
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2024-04-28T15:59:02.799493Z",
-     "iopub.status.busy": "2024-04-28T15:59:02.798832Z",
-     "iopub.status.idle": "2024-04-28T15:59:21.543386Z",
-     "shell.execute_reply": "2024-04-28T15:59:21.541546Z"
+     "iopub.execute_input": "2024-05-05T09:34:47.221720Z",
+     "iopub.status.busy": "2024-05-05T09:34:47.221176Z",
+     "iopub.status.idle": "2024-05-05T09:35:08.607233Z",
+     "shell.execute_reply": "2024-05-05T09:35:08.606101Z"
     },
     "papermill": {
-     "duration": 18.752229,
-     "end_time": "2024-04-28T15:59:21.545674",
+     "duration": 21.393312,
+     "end_time": "2024-05-05T09:35:08.609721",
      "exception": false,
-     "start_time": "2024-04-28T15:59:02.793445",
+     "start_time": "2024-05-05T09:34:47.216409",
      "status": "completed"
     },
     "tags": []
@@ -42,9 +50,9 @@
      "name": "stderr",
      "output_type": "stream",
      "text": [
-      "2024-04-28 15:59:07.595139: E external/local_xla/xla/stream_executor/cuda/cuda_dnn.cc:9261] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered\n",
-      "2024-04-28 15:59:07.595319: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:607] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered\n",
-      "2024-04-28 15:59:07.746158: E external/local_xla/xla/stream_executor/cuda/cuda_blas.cc:1515] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered\n",
+      "2024-05-05 09:34:52.681563: E external/local_xla/xla/stream_executor/cuda/cuda_dnn.cc:9261] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered\n",
+      "2024-05-05 09:34:52.681783: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:607] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered\n",
+      "2024-05-05 09:34:52.849947: E external/local_xla/xla/stream_executor/cuda/cuda_blas.cc:1515] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered\n",
       "/tmp/ipykernel_18/196577055.py:25: MatplotlibDeprecationWarning: The get_cmap function was deprecated in Matplotlib 3.7 and will be removed two minor releases later. Use ``matplotlib.colormaps[name]`` or ``matplotlib.colormaps.get_cmap(obj)`` instead.\n",
       "  cmap = mpl.cm.get_cmap(\"coolwarm\")\n"
      ]
@@ -80,20 +88,20 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 2,
-   "id": "7ecdbd10",
+   "execution_count": 3,
+   "id": "e024c466",
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2024-04-28T15:59:21.555200Z",
-     "iopub.status.busy": "2024-04-28T15:59:21.554652Z",
-     "iopub.status.idle": "2024-04-28T15:59:21.560691Z",
-     "shell.execute_reply": "2024-04-28T15:59:21.559756Z"
+     "iopub.execute_input": "2024-05-05T09:35:08.619287Z",
+     "iopub.status.busy": "2024-05-05T09:35:08.618652Z",
+     "iopub.status.idle": "2024-05-05T09:35:08.624956Z",
+     "shell.execute_reply": "2024-05-05T09:35:08.623992Z"
     },
     "papermill": {
-     "duration": 0.013327,
-     "end_time": "2024-04-28T15:59:21.563012",
+     "duration": 0.013887,
+     "end_time": "2024-05-05T09:35:08.627477",
      "exception": false,
-     "start_time": "2024-04-28T15:59:21.549685",
+     "start_time": "2024-05-05T09:35:08.613590",
      "status": "completed"
     },
     "tags": []
@@ -127,13 +135,13 @@
   },
   {
    "cell_type": "markdown",
-   "id": "bfee8108",
+   "id": "ec361c3c",
    "metadata": {
     "papermill": {
-     "duration": 0.003807,
-     "end_time": "2024-04-28T15:59:21.570823",
+     "duration": 0.003523,
+     "end_time": "2024-05-05T09:35:08.635038",
      "exception": false,
-     "start_time": "2024-04-28T15:59:21.567016",
+     "start_time": "2024-05-05T09:35:08.631515",
      "status": "completed"
     },
     "tags": []
@@ -148,20 +156,20 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 3,
-   "id": "afda88fa",
+   "execution_count": 4,
+   "id": "2b2870bb",
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2024-04-28T15:59:21.579699Z",
-     "iopub.status.busy": "2024-04-28T15:59:21.579396Z",
-     "iopub.status.idle": "2024-04-28T15:59:21.595984Z",
-     "shell.execute_reply": "2024-04-28T15:59:21.595255Z"
+     "iopub.execute_input": "2024-05-05T09:35:08.644159Z",
+     "iopub.status.busy": "2024-05-05T09:35:08.643784Z",
+     "iopub.status.idle": "2024-05-05T09:35:08.670953Z",
+     "shell.execute_reply": "2024-05-05T09:35:08.669710Z"
     },
     "papermill": {
-     "duration": 0.023217,
-     "end_time": "2024-04-28T15:59:21.597859",
+     "duration": 0.034914,
+     "end_time": "2024-05-05T09:35:08.673626",
      "exception": false,
-     "start_time": "2024-04-28T15:59:21.574642",
+     "start_time": "2024-05-05T09:35:08.638712",
      "status": "completed"
     },
     "tags": []
@@ -173,7 +181,6 @@
     "    \n",
     "    # Input image size and batch size\n",
     "    img_size = [128, 384]\n",
-    "    batch_size = 64\n",
     "    \n",
     "    # Audio duration, sample rate, and length\n",
     "    duration = 15 # second\n",
@@ -201,20 +208,20 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 4,
-   "id": "9eb9c32e",
+   "execution_count": 5,
+   "id": "41bb102a",
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2024-04-28T15:59:21.606989Z",
-     "iopub.status.busy": "2024-04-28T15:59:21.606511Z",
-     "iopub.status.idle": "2024-04-28T15:59:21.611056Z",
-     "shell.execute_reply": "2024-04-28T15:59:21.610169Z"
+     "iopub.execute_input": "2024-05-05T09:35:08.683146Z",
+     "iopub.status.busy": "2024-05-05T09:35:08.682751Z",
+     "iopub.status.idle": "2024-05-05T09:35:08.687264Z",
+     "shell.execute_reply": "2024-05-05T09:35:08.686286Z"
     },
     "papermill": {
-     "duration": 0.011034,
-     "end_time": "2024-04-28T15:59:21.612892",
+     "duration": 0.011683,
+     "end_time": "2024-05-05T09:35:08.689231",
      "exception": false,
-     "start_time": "2024-04-28T15:59:21.601858",
+     "start_time": "2024-05-05T09:35:08.677548",
      "status": "completed"
     },
     "tags": []
@@ -227,25 +234,25 @@
     "BASE_PATH3 = '/kaggle/input/birdclef-2023'\n",
     "BASE_PATH4 = '/kaggle/input/xeno-canto-bird-recordings-extended-a-m'\n",
     "BASE_PATH5 = '/kaggle/input/xeno-canto-bird-recordings-extended-n-z'\n",
-    "BASE_PATH6 = '/kaggle/input/birdclef-2024'"
+    "BASE_PATH = '/kaggle/input/birdclef-2024'"
    ]
   },
   {
    "cell_type": "code",
-   "execution_count": 5,
-   "id": "2f6302fa",
+   "execution_count": 6,
+   "id": "ab06bc18",
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2024-04-28T15:59:21.621649Z",
-     "iopub.status.busy": "2024-04-28T15:59:21.621372Z",
-     "iopub.status.idle": "2024-04-28T15:59:21.882178Z",
-     "shell.execute_reply": "2024-04-28T15:59:21.881454Z"
+     "iopub.execute_input": "2024-05-05T09:35:08.698606Z",
+     "iopub.status.busy": "2024-05-05T09:35:08.698023Z",
+     "iopub.status.idle": "2024-05-05T09:35:12.185741Z",
+     "shell.execute_reply": "2024-05-05T09:35:12.184637Z"
     },
     "papermill": {
-     "duration": 0.267276,
-     "end_time": "2024-04-28T15:59:21.883965",
+     "duration": 3.495091,
+     "end_time": "2024-05-05T09:35:12.188246",
      "exception": false,
-     "start_time": "2024-04-28T15:59:21.616689",
+     "start_time": "2024-05-05T09:35:08.693155",
      "status": "completed"
     },
     "tags": []
@@ -309,112 +316,77 @@
        "4  /kaggle/input/birdclef-2024/unlabeled_soundsca..."
       ]
      },
-     "execution_count": 5,
+     "execution_count": 6,
      "metadata": {},
      "output_type": "execute_result"
     }
    ],
    "source": [
-    "test_paths = glob(f'{BASE_PATH6}/test_soundscapes/*ogg')\n",
+    "test_paths = glob(f'{BASE_PATH}/test_soundscapes/*ogg')\n",
     "if len(test_paths) == 0:\n",
-    "    test_paths = glob(f'{BASE_PATH6}/unlabeled_soundscapes/*ogg')[:10]\n",
+    "    test_paths = glob(f'{BASE_PATH}/unlabeled_soundscapes/*ogg')[:10]\n",
     "test_df = pd.DataFrame(test_paths, columns = ['filepath'])\n",
     "test_df.head()"
    ]
   },
   {
    "cell_type": "code",
-   "execution_count": 6,
-   "id": "ce4f1f44",
+   "execution_count": 7,
+   "id": "01cb6356",
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2024-04-28T15:59:21.893561Z",
-     "iopub.status.busy": "2024-04-28T15:59:21.893237Z",
-     "iopub.status.idle": "2024-04-28T15:59:21.902735Z",
-     "shell.execute_reply": "2024-04-28T15:59:21.901856Z"
+     "iopub.execute_input": "2024-05-05T09:35:12.197702Z",
+     "iopub.status.busy": "2024-05-05T09:35:12.197360Z",
+     "iopub.status.idle": "2024-05-05T09:35:33.894422Z",
+     "shell.execute_reply": "2024-05-05T09:35:33.893253Z"
     },
     "papermill": {
-     "duration": 0.016383,
-     "end_time": "2024-04-28T15:59:21.904573",
+     "duration": 21.705171,
+     "end_time": "2024-05-05T09:35:33.897483",
      "exception": false,
-     "start_time": "2024-04-28T15:59:21.888190",
+     "start_time": "2024-05-05T09:35:12.192312",
      "status": "completed"
     },
     "tags": []
    },
-   "outputs": [],
+   "outputs": [
+    {
+     "name": "stderr",
+     "output_type": "stream",
+     "text": [
+      "Attaching 'config.json' from model 'keras/efficientnetv2/keras/efficientnetv2_b2_imagenet/2' to your Kaggle notebook...\n",
+      "Attaching 'config.json' from model 'keras/efficientnetv2/keras/efficientnetv2_b2_imagenet/2' to your Kaggle notebook...\n",
+      "Attaching 'model.weights.h5' from model 'keras/efficientnetv2/keras/efficientnetv2_b2_imagenet/2' to your Kaggle notebook...\n"
+     ]
+    }
+   ],
    "source": [
-    "def load_audio(filepath):\n",
-    "    audio, sr = librosa.load(filepath)\n",
-    "    return audio, sr\n",
-    "\n",
-    "def get_spectrogram(audio):\n",
-    "    spec = librosa.feature.melspectrogram(y=audio, \n",
-    "                                   sr=CFG.sample_rate, \n",
-    "                                   n_mels=256,\n",
-    "                                   n_fft=2048,\n",
-    "                                   hop_length=512,\n",
-    "                                   fmax=CFG.fmax,\n",
-    "                                   fmin=CFG.fmin,\n",
-    "                                   )\n",
-    "    spec = librosa.power_to_db(spec, ref=1.0)\n",
-    "    min_ = spec.min()\n",
-    "    max_ = spec.max()\n",
-    "    if max_ != min_:\n",
-    "        spec = (spec - min_)/(max_ - min_)\n",
-    "    return spec\n",
-    "\n",
-    "def display_audio(row):\n",
-    "    # Caption for viz\n",
-    "    caption = f'Id: {row.filename} | Name: {row.common_name} | Sci.Name: {row.scientific_name} | Rating: {row.rating}'\n",
-    "    # Read audio file\n",
-    "    audio, sr = load_audio(row.filepath)\n",
-    "    # Keep fixed length audio\n",
-    "    audio = audio[:CFG.audio_len]\n",
-    "    # Spectrogram from audio\n",
-    "    spec = get_spectrogram(audio)\n",
-    "    # Display audio\n",
-    "    print(\"# Audio:\")\n",
-    "    display(ipd.Audio(audio, rate=CFG.sample_rate))\n",
-    "    print('# Visualization:')\n",
-    "    fig, ax = plt.subplots(2, 1, figsize=(12, 2*3), sharex=True, tight_layout=True)\n",
-    "    fig.suptitle(caption)\n",
-    "    # Waveplot\n",
-    "    lid.waveshow(audio,\n",
-    "                 sr=CFG.sample_rate,\n",
-    "                 ax=ax[0],\n",
-    "                 color= cmap(0.1))\n",
-    "    # Specplot\n",
-    "    lid.specshow(spec, \n",
-    "                 sr = CFG.sample_rate, \n",
-    "                 hop_length=512,\n",
-    "                 n_fft=2048,\n",
-    "                 fmin=CFG.fmin,\n",
-    "                 fmax=CFG.fmax,\n",
-    "                 x_axis = 'time', \n",
-    "                 y_axis = 'mel',\n",
-    "                 cmap = 'coolwarm',\n",
-    "                 ax=ax[1])\n",
-    "    ax[0].set_xlabel('');\n",
-    "    fig.show()"
+    "inp = keras.layers.Input(shape=(None, None, 3))\n",
+    "backbone = keras_cv.models.EfficientNetV2Backbone.from_preset(CFG.preset)\n",
+    "out = keras_cv.models.ImageClassifier(\n",
+    "    backbone= backbone,\n",
+    "    num_classes = CFG.num_classes,\n",
+    "    name = 'classifier')(inp)\n",
+    "model = keras.models.Model(inputs = inp, outputs = out)\n",
+    "model.load_weights(\"/kaggle/input/baseline-model-birdclef-2024-train/best_model.weights.h5\")"
    ]
   },
   {
    "cell_type": "code",
-   "execution_count": 7,
-   "id": "793c32c8",
+   "execution_count": 8,
+   "id": "2d18cb21",
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2024-04-28T15:59:21.913973Z",
-     "iopub.status.busy": "2024-04-28T15:59:21.913685Z",
-     "iopub.status.idle": "2024-04-28T15:59:21.924721Z",
-     "shell.execute_reply": "2024-04-28T15:59:21.924076Z"
+     "iopub.execute_input": "2024-05-05T09:35:33.907997Z",
+     "iopub.status.busy": "2024-05-05T09:35:33.907583Z",
+     "iopub.status.idle": "2024-05-05T09:35:33.919227Z",
+     "shell.execute_reply": "2024-05-05T09:35:33.918057Z"
     },
     "papermill": {
-     "duration": 0.017755,
-     "end_time": "2024-04-28T15:59:21.926476",
+     "duration": 0.019424,
+     "end_time": "2024-05-05T09:35:33.921416",
      "exception": false,
-     "start_time": "2024-04-28T15:59:21.908721",
+     "start_time": "2024-05-05T09:35:33.901992",
      "status": "completed"
     },
     "tags": []
@@ -464,20 +436,20 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 8,
-   "id": "3fd3906b",
+   "execution_count": 9,
+   "id": "30cde375",
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2024-04-28T15:59:21.935598Z",
-     "iopub.status.busy": "2024-04-28T15:59:21.935343Z",
-     "iopub.status.idle": "2024-04-28T15:59:21.940807Z",
-     "shell.execute_reply": "2024-04-28T15:59:21.940059Z"
+     "iopub.execute_input": "2024-05-05T09:35:33.931630Z",
+     "iopub.status.busy": "2024-05-05T09:35:33.931274Z",
+     "iopub.status.idle": "2024-05-05T09:35:33.937769Z",
+     "shell.execute_reply": "2024-05-05T09:35:33.936660Z"
     },
     "papermill": {
-     "duration": 0.012163,
-     "end_time": "2024-04-28T15:59:21.942620",
+     "duration": 0.014205,
+     "end_time": "2024-05-05T09:35:33.939927",
      "exception": false,
-     "start_time": "2024-04-28T15:59:21.930457",
+     "start_time": "2024-05-05T09:35:33.925722",
      "status": "completed"
     },
     "tags": []
@@ -487,13 +459,11 @@
     "def build_dataset(paths, batch_size = 1, decode_fn=None, cache=False):\n",
     "    if decode_fn is None:\n",
     "        decode_fn = build_decoder(dim = CFG.audio_len)\n",
-    "\n",
     "    AUTO = tf.data.experimental.AUTOTUNE\n",
     "    slices = (paths, )\n",
     "    ds = tf.data.Dataset.from_tensor_slices(slices)\n",
     "    ds = ds.map(decode_fn, num_parallel_calls=AUTO)\n",
     "    ds = ds.cache() if cache else ds\n",
-    "\n",
     "    ds = ds.batch(batch_size = batch_size, drop_remainder = True)\n",
     "    ds = ds.prefetch(AUTO)\n",
     "    return ds\n",
@@ -502,63 +472,20 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 9,
-   "id": "0da3a6f2",
-   "metadata": {
-    "execution": {
-     "iopub.execute_input": "2024-04-28T15:59:21.951730Z",
-     "iopub.status.busy": "2024-04-28T15:59:21.951460Z",
-     "iopub.status.idle": "2024-04-28T15:59:42.503755Z",
-     "shell.execute_reply": "2024-04-28T15:59:42.502929Z"
-    },
-    "papermill": {
-     "duration": 20.559332,
-     "end_time": "2024-04-28T15:59:42.506027",
-     "exception": false,
-     "start_time": "2024-04-28T15:59:21.946695",
-     "status": "completed"
-    },
-    "tags": []
-   },
-   "outputs": [
-    {
-     "name": "stderr",
-     "output_type": "stream",
-     "text": [
-      "Attaching 'config.json' from model 'keras/efficientnetv2/keras/efficientnetv2_b2_imagenet/2' to your Kaggle notebook...\n",
-      "Attaching 'config.json' from model 'keras/efficientnetv2/keras/efficientnetv2_b2_imagenet/2' to your Kaggle notebook...\n",
-      "Attaching 'model.weights.h5' from model 'keras/efficientnetv2/keras/efficientnetv2_b2_imagenet/2' to your Kaggle notebook...\n"
-     ]
-    }
-   ],
-   "source": [
-    "inp = keras.layers.Input(shape=(None, None, 3))\n",
-    "backbone = keras_cv.models.EfficientNetV2Backbone.from_preset(CFG.preset)\n",
-    "out = keras_cv.models.ImageClassifier(\n",
-    "    backbone= backbone,\n",
-    "    num_classes = CFG.num_classes,\n",
-    "    name = 'classifier')(inp)\n",
-    "model = keras.models.Model(inputs = inp, outputs = out)\n",
-    "model.load_weights(\"/kaggle/input/baseline-model-birdclef-2024-train/best_model.weights.h5\")\n",
-    "\n"
-   ]
-  },
-  {
-   "cell_type": "code",
    "execution_count": 10,
-   "id": "53181f10",
+   "id": "6af71917",
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2024-04-28T15:59:42.516730Z",
-     "iopub.status.busy": "2024-04-28T15:59:42.516200Z",
-     "iopub.status.idle": "2024-04-28T16:01:19.652769Z",
-     "shell.execute_reply": "2024-04-28T16:01:19.651690Z"
+     "iopub.execute_input": "2024-05-05T09:35:33.950214Z",
+     "iopub.status.busy": "2024-05-05T09:35:33.949855Z",
+     "iopub.status.idle": "2024-05-05T09:37:57.478957Z",
+     "shell.execute_reply": "2024-05-05T09:37:57.477736Z"
     },
     "papermill": {
-     "duration": 97.144348,
-     "end_time": "2024-04-28T16:01:19.655103",
+     "duration": 143.537202,
+     "end_time": "2024-05-05T09:37:57.481568",
      "exception": false,
-     "start_time": "2024-04-28T15:59:42.510755",
+     "start_time": "2024-05-05T09:35:33.944366",
      "status": "completed"
     },
     "tags": []
@@ -568,7 +495,7 @@
      "name": "stderr",
      "output_type": "stream",
      "text": [
-      "test : 100%|██████████| 10/10 [01:35<00:00,  9.56s/it]\n"
+      "test : 100%|██████████| 10/10 [01:36<00:00,  9.65s/it]\n"
      ]
     }
    ],
@@ -594,19 +521,19 @@
   {
    "cell_type": "code",
    "execution_count": 11,
-   "id": "f0478a3b",
+   "id": "97c5338e",
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2024-04-28T16:01:19.667929Z",
-     "iopub.status.busy": "2024-04-28T16:01:19.667087Z",
-     "iopub.status.idle": "2024-04-28T16:01:19.896922Z",
-     "shell.execute_reply": "2024-04-28T16:01:19.895933Z"
+     "iopub.execute_input": "2024-05-05T09:37:57.494609Z",
+     "iopub.status.busy": "2024-05-05T09:37:57.494232Z",
+     "iopub.status.idle": "2024-05-05T09:37:57.728899Z",
+     "shell.execute_reply": "2024-05-05T09:37:57.727861Z"
     },
     "papermill": {
-     "duration": 0.238368,
-     "end_time": "2024-04-28T16:01:19.899016",
+     "duration": 0.242878,
+     "end_time": "2024-05-05T09:37:57.730973",
      "exception": false,
-     "start_time": "2024-04-28T16:01:19.660648",
+     "start_time": "2024-05-05T09:37:57.488095",
      "status": "completed"
     },
     "tags": []
@@ -660,122 +587,122 @@
        "    <tr>\n",
        "      <th>0</th>\n",
        "      <td>1872382287_5</td>\n",
-       "      <td>0.004888</td>\n",
-       "      <td>0.020012</td>\n",
-       "      <td>0.000201</td>\n",
-       "      <td>0.001296</td>\n",
-       "      <td>0.005234</td>\n",
-       "      <td>0.000784</td>\n",
-       "      <td>0.011128</td>\n",
-       "      <td>0.000390</td>\n",
-       "      <td>0.000343</td>\n",
+       "      <td>0.004641</td>\n",
+       "      <td>0.001483</td>\n",
+       "      <td>0.000611</td>\n",
+       "      <td>0.001257</td>\n",
+       "      <td>0.005665</td>\n",
+       "      <td>0.000171</td>\n",
+       "      <td>0.001986</td>\n",
+       "      <td>0.000762</td>\n",
+       "      <td>0.003039</td>\n",
        "      <td>...</td>\n",
-       "      <td>0.029768</td>\n",
-       "      <td>0.000377</td>\n",
-       "      <td>0.000417</td>\n",
-       "      <td>0.002697</td>\n",
-       "      <td>0.002955</td>\n",
-       "      <td>0.001876</td>\n",
-       "      <td>0.000365</td>\n",
-       "      <td>0.000160</td>\n",
-       "      <td>0.004719</td>\n",
-       "      <td>0.000262</td>\n",
+       "      <td>0.019501</td>\n",
+       "      <td>0.001897</td>\n",
+       "      <td>0.001297</td>\n",
+       "      <td>0.006376</td>\n",
+       "      <td>0.002797</td>\n",
+       "      <td>0.006027</td>\n",
+       "      <td>0.000428</td>\n",
+       "      <td>0.000210</td>\n",
+       "      <td>0.001607</td>\n",
+       "      <td>0.001566</td>\n",
        "    </tr>\n",
        "    <tr>\n",
        "      <th>1</th>\n",
        "      <td>1872382287_10</td>\n",
-       "      <td>0.005062</td>\n",
-       "      <td>0.008706</td>\n",
-       "      <td>0.000233</td>\n",
-       "      <td>0.000834</td>\n",
-       "      <td>0.004713</td>\n",
-       "      <td>0.001073</td>\n",
-       "      <td>0.015683</td>\n",
-       "      <td>0.000442</td>\n",
-       "      <td>0.001653</td>\n",
+       "      <td>0.005361</td>\n",
+       "      <td>0.010142</td>\n",
+       "      <td>0.000674</td>\n",
+       "      <td>0.001485</td>\n",
+       "      <td>0.004555</td>\n",
+       "      <td>0.000190</td>\n",
+       "      <td>0.007647</td>\n",
+       "      <td>0.000844</td>\n",
+       "      <td>0.008572</td>\n",
        "      <td>...</td>\n",
-       "      <td>0.040331</td>\n",
-       "      <td>0.000631</td>\n",
-       "      <td>0.001719</td>\n",
-       "      <td>0.001140</td>\n",
-       "      <td>0.002510</td>\n",
-       "      <td>0.001193</td>\n",
-       "      <td>0.001563</td>\n",
-       "      <td>0.000684</td>\n",
-       "      <td>0.006140</td>\n",
-       "      <td>0.000687</td>\n",
+       "      <td>0.013195</td>\n",
+       "      <td>0.000641</td>\n",
+       "      <td>0.003169</td>\n",
+       "      <td>0.011248</td>\n",
+       "      <td>0.026498</td>\n",
+       "      <td>0.001707</td>\n",
+       "      <td>0.002173</td>\n",
+       "      <td>0.000262</td>\n",
+       "      <td>0.002829</td>\n",
+       "      <td>0.000705</td>\n",
        "    </tr>\n",
        "    <tr>\n",
        "      <th>2</th>\n",
        "      <td>1872382287_15</td>\n",
-       "      <td>0.006374</td>\n",
-       "      <td>0.037387</td>\n",
-       "      <td>0.000162</td>\n",
-       "      <td>0.000371</td>\n",
-       "      <td>0.005338</td>\n",
-       "      <td>0.000402</td>\n",
-       "      <td>0.016170</td>\n",
-       "      <td>0.000625</td>\n",
-       "      <td>0.003979</td>\n",
+       "      <td>0.002470</td>\n",
+       "      <td>0.004976</td>\n",
+       "      <td>0.000533</td>\n",
+       "      <td>0.000796</td>\n",
+       "      <td>0.002969</td>\n",
+       "      <td>0.000157</td>\n",
+       "      <td>0.004767</td>\n",
+       "      <td>0.001246</td>\n",
+       "      <td>0.007315</td>\n",
        "      <td>...</td>\n",
-       "      <td>0.005152</td>\n",
-       "      <td>0.000914</td>\n",
-       "      <td>0.001052</td>\n",
-       "      <td>0.006211</td>\n",
-       "      <td>0.001207</td>\n",
-       "      <td>0.001299</td>\n",
-       "      <td>0.001066</td>\n",
-       "      <td>0.000874</td>\n",
-       "      <td>0.003991</td>\n",
-       "      <td>0.000307</td>\n",
+       "      <td>0.023924</td>\n",
+       "      <td>0.001861</td>\n",
+       "      <td>0.001512</td>\n",
+       "      <td>0.006253</td>\n",
+       "      <td>0.003471</td>\n",
+       "      <td>0.006346</td>\n",
+       "      <td>0.001440</td>\n",
+       "      <td>0.000325</td>\n",
+       "      <td>0.002299</td>\n",
+       "      <td>0.001137</td>\n",
        "    </tr>\n",
        "    <tr>\n",
        "      <th>3</th>\n",
        "      <td>1872382287_20</td>\n",
-       "      <td>0.007376</td>\n",
-       "      <td>0.008998</td>\n",
-       "      <td>0.000251</td>\n",
-       "      <td>0.000539</td>\n",
-       "      <td>0.002617</td>\n",
-       "      <td>0.001366</td>\n",
-       "      <td>0.007882</td>\n",
-       "      <td>0.000558</td>\n",
-       "      <td>0.001933</td>\n",
+       "      <td>0.003734</td>\n",
+       "      <td>0.004889</td>\n",
+       "      <td>0.000721</td>\n",
+       "      <td>0.000625</td>\n",
+       "      <td>0.002291</td>\n",
+       "      <td>0.000164</td>\n",
+       "      <td>0.002849</td>\n",
+       "      <td>0.002283</td>\n",
+       "      <td>0.008536</td>\n",
        "      <td>...</td>\n",
-       "      <td>0.034073</td>\n",
-       "      <td>0.000645</td>\n",
-       "      <td>0.001835</td>\n",
-       "      <td>0.002367</td>\n",
-       "      <td>0.001870</td>\n",
-       "      <td>0.001112</td>\n",
-       "      <td>0.001051</td>\n",
-       "      <td>0.000590</td>\n",
-       "      <td>0.003157</td>\n",
-       "      <td>0.000512</td>\n",
+       "      <td>0.010299</td>\n",
+       "      <td>0.001308</td>\n",
+       "      <td>0.003347</td>\n",
+       "      <td>0.009318</td>\n",
+       "      <td>0.005408</td>\n",
+       "      <td>0.007144</td>\n",
+       "      <td>0.001936</td>\n",
+       "      <td>0.000734</td>\n",
+       "      <td>0.001378</td>\n",
+       "      <td>0.001426</td>\n",
        "    </tr>\n",
        "    <tr>\n",
        "      <th>4</th>\n",
        "      <td>1872382287_25</td>\n",
-       "      <td>0.006283</td>\n",
-       "      <td>0.002979</td>\n",
-       "      <td>0.000208</td>\n",
-       "      <td>0.000949</td>\n",
-       "      <td>0.006196</td>\n",
-       "      <td>0.001072</td>\n",
-       "      <td>0.009079</td>\n",
-       "      <td>0.000574</td>\n",
-       "      <td>0.002480</td>\n",
+       "      <td>0.004535</td>\n",
+       "      <td>0.000916</td>\n",
+       "      <td>0.000435</td>\n",
+       "      <td>0.000843</td>\n",
+       "      <td>0.006686</td>\n",
+       "      <td>0.000230</td>\n",
+       "      <td>0.002141</td>\n",
+       "      <td>0.001126</td>\n",
+       "      <td>0.005136</td>\n",
        "      <td>...</td>\n",
-       "      <td>0.021620</td>\n",
-       "      <td>0.000807</td>\n",
-       "      <td>0.001991</td>\n",
-       "      <td>0.001684</td>\n",
-       "      <td>0.002766</td>\n",
-       "      <td>0.004483</td>\n",
-       "      <td>0.000937</td>\n",
-       "      <td>0.000766</td>\n",
-       "      <td>0.003546</td>\n",
-       "      <td>0.001083</td>\n",
+       "      <td>0.023138</td>\n",
+       "      <td>0.002333</td>\n",
+       "      <td>0.002404</td>\n",
+       "      <td>0.003643</td>\n",
+       "      <td>0.001753</td>\n",
+       "      <td>0.011947</td>\n",
+       "      <td>0.000620</td>\n",
+       "      <td>0.000430</td>\n",
+       "      <td>0.001559</td>\n",
+       "      <td>0.001917</td>\n",
        "    </tr>\n",
        "  </tbody>\n",
        "</table>\n",
@@ -784,25 +711,25 @@
       ],
       "text/plain": [
        "          row_id    asbfly   ashdro1   ashpri1   ashwoo2   asikoe2   asiope1  \\\n",
-       "0   1872382287_5  0.004888  0.020012  0.000201  0.001296  0.005234  0.000784   \n",
-       "1  1872382287_10  0.005062  0.008706  0.000233  0.000834  0.004713  0.001073   \n",
-       "2  1872382287_15  0.006374  0.037387  0.000162  0.000371  0.005338  0.000402   \n",
-       "3  1872382287_20  0.007376  0.008998  0.000251  0.000539  0.002617  0.001366   \n",
-       "4  1872382287_25  0.006283  0.002979  0.000208  0.000949  0.006196  0.001072   \n",
+       "0   1872382287_5  0.004641  0.001483  0.000611  0.001257  0.005665  0.000171   \n",
+       "1  1872382287_10  0.005361  0.010142  0.000674  0.001485  0.004555  0.000190   \n",
+       "2  1872382287_15  0.002470  0.004976  0.000533  0.000796  0.002969  0.000157   \n",
+       "3  1872382287_20  0.003734  0.004889  0.000721  0.000625  0.002291  0.000164   \n",
+       "4  1872382287_25  0.004535  0.000916  0.000435  0.000843  0.006686  0.000230   \n",
        "\n",
        "    aspfly1   aspswi1   barfly1  ...   whbwoo2   whcbar1   whiter2    whrmun  \\\n",
-       "0  0.011128  0.000390  0.000343  ...  0.029768  0.000377  0.000417  0.002697   \n",
-       "1  0.015683  0.000442  0.001653  ...  0.040331  0.000631  0.001719  0.001140   \n",
-       "2  0.016170  0.000625  0.003979  ...  0.005152  0.000914  0.001052  0.006211   \n",
-       "3  0.007882  0.000558  0.001933  ...  0.034073  0.000645  0.001835  0.002367   \n",
-       "4  0.009079  0.000574  0.002480  ...  0.021620  0.000807  0.001991  0.001684   \n",
+       "0  0.001986  0.000762  0.003039  ...  0.019501  0.001897  0.001297  0.006376   \n",
+       "1  0.007647  0.000844  0.008572  ...  0.013195  0.000641  0.003169  0.011248   \n",
+       "2  0.004767  0.001246  0.007315  ...  0.023924  0.001861  0.001512  0.006253   \n",
+       "3  0.002849  0.002283  0.008536  ...  0.010299  0.001308  0.003347  0.009318   \n",
+       "4  0.002141  0.001126  0.005136  ...  0.023138  0.002333  0.002404  0.003643   \n",
        "\n",
        "    whtkin2    woosan   wynlau1   yebbab1   yebbul3   zitcis1  \n",
-       "0  0.002955  0.001876  0.000365  0.000160  0.004719  0.000262  \n",
-       "1  0.002510  0.001193  0.001563  0.000684  0.006140  0.000687  \n",
-       "2  0.001207  0.001299  0.001066  0.000874  0.003991  0.000307  \n",
-       "3  0.001870  0.001112  0.001051  0.000590  0.003157  0.000512  \n",
-       "4  0.002766  0.004483  0.000937  0.000766  0.003546  0.001083  \n",
+       "0  0.002797  0.006027  0.000428  0.000210  0.001607  0.001566  \n",
+       "1  0.026498  0.001707  0.002173  0.000262  0.002829  0.000705  \n",
+       "2  0.003471  0.006346  0.001440  0.000325  0.002299  0.001137  \n",
+       "3  0.005408  0.007144  0.001936  0.000734  0.001378  0.001426  \n",
+       "4  0.001753  0.011947  0.000620  0.000430  0.001559  0.001917  \n",
        "\n",
        "[5 rows x 183 columns]"
       ]
@@ -830,32 +757,7 @@
      "sourceType": "competition"
     },
     {
-     "datasetId": 726237,
-     "sourceId": 1487019,
-     "sourceType": "datasetVersion"
-    },
-    {
-     "datasetId": 726312,
-     "sourceId": 1487116,
-     "sourceType": "datasetVersion"
-    },
-    {
-     "datasetId": 985270,
-     "sourceId": 1664376,
-     "sourceType": "datasetVersion"
-    },
-    {
-     "datasetId": 3012199,
-     "sourceId": 5181249,
-     "sourceType": "datasetVersion"
-    },
-    {
-     "datasetId": 3020983,
-     "sourceId": 5195317,
-     "sourceType": "datasetVersion"
-    },
-    {
-     "sourceId": 174467364,
+     "sourceId": 175712895,
      "sourceType": "kernelVersion"
     },
     {
@@ -889,14 +791,14 @@
   },
   "papermill": {
    "default_parameters": {},
-   "duration": 143.027026,
-   "end_time": "2024-04-28T16:01:23.262032",
+   "duration": 196.143968,
+   "end_time": "2024-05-05T09:38:00.564367",
    "environment_variables": {},
    "exception": null,
    "input_path": "__notebook__.ipynb",
    "output_path": "__notebook__.ipynb",
    "parameters": {},
-   "start_time": "2024-04-28T15:59:00.235006",
+   "start_time": "2024-05-05T09:34:44.420399",
    "version": "2.5.0"
   }
  },
